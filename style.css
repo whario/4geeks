@@ -1,60 +1,37 @@
 body{
     background-color:rgb(231, 231, 231);
 }
-.container{
-    width: 680px;
+.navbar {
+    justify-content: space-around;
     background-color: white;
-}
-h1{
-    color: gray;
-    margin: 0px;
 }
 h2 {
     font-family: 'Oleo Script', cursive;
     color: gray;
-    margin-left: 40px;
-    margin-top: -35px;
-}
-h5{
-    color: gray;
-    margin: 0px;
 }
 .fa-instagram {
-    margin-left: 100px;
+    margin-right: 2%;
     color: gray;
     font-size: 35px;
-}
-.fa-cog {
-    color: gray;
-    margin-left: 10px;
-    font-size: 20px;
-}
-.form-inline {
-    margin-right: 150px;
 }
 #message-text {
     width: 100%;
 }
-.form-group {
+#pills-tab {
     padding: 2%;
 }
-#pills-tab {
-padding-top: 10px;
+.nav-link, a, a:hover, a:active {
+    color: gray;
 }
-.text-muted {
-    margin-top: 10px;
+.numeracion{
+    display: inline;
+    float: right;
+    color: gray;
 }
-.fa-heart {
-    padding-right: 10px;
+.comment {
+    display: inline;
 }
-.title-post {
-    width: 50%;
-    margin: 0px;
-    padding: 0px;
-}
-.num-post {
-
-    width: 20%;
-    margin-top: 0px;
-    margin-left: 90%;
+.menu-footer {
+    display: inline;
+    float: right;
 }

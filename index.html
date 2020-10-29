@@ -14,123 +14,161 @@
 
 <body>
 
-	<div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <nav class="navbar navbar-light bg-light">
-                        <a class="navbar-brand"><i class="fab fa-instagram"><h2>Instagram</h2></i></a>
-                        <form class="form-inline">
-                            <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">Create a new post</button>
-                                <!-- Modal -->
-                                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                <div class="modal-dialog">
-                                    <div class="modal-content">
-                                    <div class="modal-body">
-                                        <div class="form-group">
-                                            <textarea class="form-control" id="message-text"></textarea>
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="SendImage"></label>
-                                            <input type="file" class="form-control-file" id="exampleFormControlFile1">
-                                        </div>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                        <button type="button" class="btn btn-primary">Publish</button>
-                                    </div>
-                                    </div>
-                                </div>
-                                </div>
-                            <i class="fas fa-cog"></i>
-                            <div class="btn-group">
-                            <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            </button>
-                            <div class="dropdown-menu">
-                                <a class="dropdown-item" href="#">Action</a>
-                                <a class="dropdown-item" href="#">Another action</a>
-                                <a class="dropdown-item" href="#">Something else here</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#">Separated link</a>
+<div class="container-fluid">
+    <!--Navbar-->
+	<nav class="navbar">
+		<a class="navbar-brand"><i class="fab fa-instagram"></i><span class="navbar-text"><h2>Instagram</h2></span></a>
+		<form class="form-inline">
+            <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">Create a new post</button>
+            <!--Modal-->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <textarea class="form-control" id="message-text"></textarea>
                             </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Save changes</button>
                             </div>
-                        </form>
-                    </nav>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12">
-                    <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
-                        <li class="nav-item" role="presentation">
-                            <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true"><i class="fas fa-square"></i>
-                            </a>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                            <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false"><i class="fas fa-th"></i>
-                            </a>
-                        </li>
-                    </ul>
-                    <div class="tab-content" id="pills-tabContent">
-                        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-                        
-                        <div class="row">
-                            <div class="card" style="width: 680px; margin: auto;">
-                                <div class="card-body">
-                                    <div class="title-post">
-                                        <h5 class="card-title">My first photo</h5>
-                                    </div>
-                                    <div class="num-post">
-                                        <h6 class="card-subtitle mb-2 text-muted">12/14</h6>
-                                    </div>
-                                    <img src="http://placeimg.com/640/400/any">
-                                    <h6 class="card-subtitle mb-2 text-muted">23 likes</h6>
-                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    <h6 class="card-subtitle mb-2 text-muted"><i class="far fa-heart"></i>Comment...</h6>
-                                </div>
-                                </div>
-                        </div>
-                        
-                        </div>
-                        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-                            
-                            <div class="card-group">
-                                <div class="card">
-                                    <img src="http://placeimg.com/640/400/any" class="card-img-top" alt="...">
-                                </div>
-                                <div class="card">
-                                    <img src="http://placeimg.com/640/400/any" class="card-img-top" alt="...">
-                                </div>
-                                <div class="card">
-                                    <video src="https://irrinews.com/wp-content/uploads/2016/11/Lorem-Ipsum-video.mp4?_=5" controls class="card-img-top" alt="...">
-                                </div>
-                            </div>
-                                                        <div class="card-group">
-                                <div class="card">
-                                    <img src="http://placeimg.com/640/400/any" class="card-img-top" alt="...">
-                                </div>
-                                <div class="card">
-                                    <video src="https://irrinews.com/wp-content/uploads/2016/11/Lorem-Ipsum-video.mp4?_=5" controls class="card-img-top" alt="...">
-                                </div>
-                                <div class="card">
-                                    <img src="http://placeimg.com/640/400/any" class="card-img-top" alt="...">
-                                </div>
-                            </div>
-                                                        <div class="card-group">
-                                <div class="card">
-                                    <video src="https://irrinews.com/wp-content/uploads/2016/11/Lorem-Ipsum-video.mp4?_=5" controls class="card-img-top" alt="...">
-                                </div>
-                                <div class="card">
-                                    <img src="http://placeimg.com/640/400/any" class="card-img-top" alt="...">
-                                </div>
-                                <div class="card">
-                                    <img src="http://placeimg.com/640/400/any" class="card-img-top" alt="...">
-                                </div>
-                            </div>
-
                         </div>
                     </div>
                 </div>
+            <div class="btn-group">
+                <i class="fas fa-cog"></i><button class="btn btn-sm btn-outline-secondary" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-caret-down"></i></button>
+                    <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Separated link</a>
+                    </div>
             </div>
+		</form>
+	</nav>
+    <!--Pills Tab-->
+	<ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
+		<li class="nav-item" role="presentation">
+			<a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab"
+				aria-controls="pills-home" aria-selected="true"><i class="fas fa-square"></i></a>
+		</li>
+		<li class="nav-item" role="presentation">
+			<a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab"
+				aria-controls="pills-profile" aria-selected="false"><i class="fas fa-th-large"></i></a>
+		</li>
+	</ul>
+	<div class="tab-content" id="pills-tabContent">
+		<div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+        <!--List content-->
+            <div class="row justify-content-center">
+                <div class="card col-12 col-md-8">
+                    <div class="card-header bg-transparent">
+                        <h5>My First Photo<span class="numeracion">12/14</span></h5>
+                    </div>
+                    <img src="http://placeimg.com/640/400/animals" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">23 Likes</p>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                    <div class="card-footer bg-transparent">
+                        <i class="far fa-heart"></i>
+                        <p class="comment">Comment...</p>
+                        <div class="menu-footer"><i class="fas fa-ellipsis-v"></i></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="card col-12 col-md-8">
+                    <div class="card-header bg-transparent">
+                        <h5>My First Video<span class="numeracion">12/14</span></h5>
+                    </div>
+                    <video src="https://irrinews.com/wp-content/uploads/2016/11/Lorem-Ipsum-video.mp4?_=5" controls class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">23 Likes</p>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                    <div class="card-footer bg-transparent">
+                        <i class="far fa-heart"></i>
+                        <p class="comment">Comment...</p>
+                        <div class="menu-footer"><i class="fas fa-ellipsis-v"></i></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="card col-12 col-md-8">
+                    <div class="card-header bg-transparent">
+                        <h5>My Second Photo<span class="numeracion">12/14</span></h5>
+                    </div>
+                    <img src="http://placeimg.com/640/400/people" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">23 Likes</p>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                    <div class="card-footer bg-transparent">
+                        <i class="far fa-heart"></i>
+                        <p class="comment">Comment...</p>
+                        <div class="menu-footer"><i class="fas fa-ellipsis-v"></i></div>
+                    </div>
+                </div>
+            </div>
+			
+        </div>
+		<div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+        <!--Grid content-->
+			<div class="row">
+				<div class="col-12 col-md-4 border p-0">
+					<div class="card">
+						<img src="http://placeimg.com/640/400/animals" class="card-img-top" alt="...">
+					</div>
+				</div>
+				<div class="col-12 col-md-4 border p-0">
+					<div class="card">
+						<img src="http://placeimg.com/640/400/arch" class="card-img-top" alt="...">
+					</div>
+				</div>
+				<div class="col-12 col-md-4 border p-0">
+					<div class="card">
+						<img src="http://placeimg.com/640/400/people" class="card-img-top" alt="...">
+					</div>
+				</div>
+            </div>
+            <div class="row">
+				<div class="col-12 col-md-4 border p-0">
+					<div class="card">
+						<video src="https://irrinews.com/wp-content/uploads/2016/11/Lorem-Ipsum-video.mp4?_=5" controls class="card-img-top" alt="...">
+					</div>
+				</div>
+				<div class="col-12 col-md-4 border p-0">
+					<div class="card">
+						<img src="http://placeimg.com/640/400/tech" class="card-img-top" alt="...">
+					</div>
+				</div>
+				<div class="col-12 col-md-4 border p-0">
+					<div class="card">
+						<img src="http://placeimg.com/640/400/nature" class="card-img-top" alt="...">
+					</div>
+				</div>
+            </div>
+            <div class="row">
+				<div class="col-12 col-md-4 border p-0">
+					<div class="card">
+						<img src="http://placeimg.com/640/400/people" class="card-img-top" alt="...">
+					</div>
+				</div>
+				<div class="col-12 col-md-4 border p-0">
+					<div class="card">
+						<img src="http://placeimg.com/640/400/arch" class="card-img-top" alt="...">
+					</div>
+				</div>
+				<div class="col-12 col-md-4 border p-0">
+					<div class="card">
+						<img src="http://placeimg.com/640/400/tech" class="card-img-top" alt="...">
+					</div>
+				</div>
+        </div>
 	</div>
+</div>
+
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
 	integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
 </script>
